@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        >
+
+
+
+
+        <RelativeLayout
+            android:padding="12dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/moveImage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/moveName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+
+                android:layout_toRightOf="@id/moveImage"
+                android:text="move Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/love"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/moveName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/moveImage"
+                android:src="@drawable/love" />
+
+            <TextView
+                android:id="@+id/scoremovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moveName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/love"
+                android:text="95%"
+                android:textColor="#D2D8D8"
+                android:textSize="22sp" />
+
+
+            <ImageView
+                android:id="@+id/cry"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/cry"
+                android:layout_toRightOf="@id/scoremovie"
+                android:layout_marginLeft="22dp"
+                android:layout_below="@+id/moveName"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/cryscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moveName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/cry"
+                android:text="15%"
+                android:textColor="#D2D8D8"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduce"
+                android:layout_below="@+id/love"
+                android:layout_toRightOf="@id/moveImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tointroduce"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Theatre"
+                android:layout_below="@+id/tointroduce"
+                android:layout_toRightOf="@id/moveImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tobuyticket"/>
+
+            <TextView
+                android:id="@+id/tocomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tointroduce"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tobuyticket"
+                android:text="Comment" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

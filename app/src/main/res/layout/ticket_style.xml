@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="15dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                android:id="@+id/bgmovieimage"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/cartmoviename"
+                android:text="moviename"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="14sp"
+                    android:textColor="#C6CACA"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Screen"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="170dp"
+                    android:textColor="#C6CACA"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9:00 AM"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="14sp"
+                    android:id="@+id/tickettime"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2d"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/ticketfomate"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="14sp"
+                    android:textColor="#C6CACA"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="150dp"
+                    android:textColor="#C6CACA"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="14sp"
+                    android:id="@+id/ticketqty"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="196dp"
+                    android:id="@+id/ticketprice"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:src="@drawable/barcode"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

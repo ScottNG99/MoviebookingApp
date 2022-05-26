@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.RegisterFragment"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        android:textColorHint="#565353"
+        tools:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+
+        android:layout_marginTop="40dp"
+        android:textColorHint="#565353"
+       android:layout_gravity="center"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:textColorHint="#565353"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/regpassword2"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:paddingLeft="10dp"
+        android:textColorHint="#565353"
+        android:layout_gravity="center"
+         />
+
+    <Button
+
+        android:id="@+id/btnRegister"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_radius"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="80dp"/>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.individualproject.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_all_listmovieFragment"
+            app:destination="@id/all_listmovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/all_listmovieFragment"
+        android:name="com.example.individualproject.Fragment.All_listmovieFragment"
+        android:label="fragment_all_listmovie"
+        tools:layout="@layout/fragment_all_listmovie" >
+        <action
+            android:id="@+id/action_all_listmovieFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_all_listmovieFragment_to_detailmovieFragment"
+            app:destination="@id/detailmovieFragment" />
+        <action
+            android:id="@+id/action_all_listmovieFragment_to_buyTicKetFragment"
+            app:destination="@id/buyTicKetFragment" />
+        <action
+            android:id="@+id/action_all_listmovieFragment_to_commentFragment"
+            app:destination="@id/commentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailmovieFragment"
+        android:name="com.example.individualproject.Fragment.DetailmovieFragment"
+        android:label="fragment_detailmovie"
+        tools:layout="@layout/fragment_detailmovie" >
+        <action
+            android:id="@+id/action_detailmovieFragment_to_all_listmovieFragment"
+            app:destination="@id/all_listmovieFragment" />
+
+        <argument
+            android:name="moviename"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="introduce"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="imageURL"
+            app:argType="string"
+            android:defaultValue="null" />
+
+        <argument
+            android:name="score"
+            app:argType="string"
+            android:defaultValue="null" />
+
+        <argument
+            android:name="tkprice"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailmovieFragment_to_buyTicKetFragment2"
+            app:destination="@id/buyTicKetFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/buyTicKetFragment"
+        android:name="com.example.individualproject.Fragment.BuyTicKetFragment"
+        android:label="fragment_buy_tic_ket"
+        tools:layout="@layout/fragment_buy_tic_ket"
+        >
+        <action
+            android:id="@+id/action_buyTicKetFragment_to_detailmovieFragment"
+            app:destination="@id/detailmovieFragment" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="tkprice"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="moviebname"
+            app:argType="string"
+            android:defaultValue="null" />
+
+        <argument
+            android:name="time1"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="time2"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="time3"
+            app:argType="string"
+            android:defaultValue="null" />
+
+        <argument
+            android:name="fomate1"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="fomate2"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="fomate3"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="imageURL"
+            app:argType="string"
+            android:defaultValue="null" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.example.individualproject.Fragment.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.individualproject.Fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.individualproject.Fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.individualproject.Fragment.CommentFragment"
+        android:label="fragment_comment"
+        tools:layout="@layout/fragment_comment" >
+        <action
+            android:id="@+id/action_commentFragment_to_all_listmovieFragment"
+            app:destination="@id/all_listmovieFragment" />
+
+        <argument
+            android:name="moviebname"
+            app:argType="string"
+            android:defaultValue="null" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/listAllcommentFragment"
+        android:name="com.example.individualproject.Fragment.ListAllcommentFragment"
+        android:label="fragment_list_allcomment"
+        tools:layout="@layout/fragment_list_allcomment" />
+
+
+</navigation>

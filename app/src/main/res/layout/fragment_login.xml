@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.LoginFragment"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket"
+        android:textColor="#F06534"
+
+        android:textSize="55sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to movie ticket app"
+        android:textColor="#CECDCD"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#565353"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#565353"
+        android:drawableRight="@drawable/ic_baseline_password_24"
+        android:inputType="textPassword"
+       />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_radius"
+        android:text="Sign in"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+         />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Dont Have An Account?"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+
+            android:text="Signup"
+            android:textColor="#DF3636"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

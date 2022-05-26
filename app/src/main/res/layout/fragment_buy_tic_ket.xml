@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Fragment.BuyTicKetFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen"
+        android:layout_marginTop="45dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair1"
+                android:onClick="btnselctchair"
+                />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair2"
+                android:layout_marginLeft="30dp"
+                android:onClick="btnselctchair"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair3"
+                android:layout_marginLeft="30dp"
+                android:onClick="btnselctchair"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair4"
+                android:onClick="btnselctchair"
+                />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair5"
+                android:layout_marginLeft="30dp"
+                android:onClick="btnselctchair"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="85dp"
+                android:src="@drawable/chari"
+                android:id="@+id/chair6"
+                android:layout_marginLeft="30dp"
+                android:onClick="btnselctchair"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Time"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="9:00 am"
+            android:id="@+id/stime1"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="12:00 pm"
+            android:id="@+id/stime2"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="8:45 pm"
+            android:id="@+id/stime3"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Fomate"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="2D"
+            android:id="@+id/twod"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="3D"
+            android:id="@+id/threed"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edge"
+            android:text="IMAX"
+            android:id="@+id/imax"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="$0"
+            android:id="@+id/totalprice"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="30sp"/>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:id="@+id/topay"
+            android:text="Pay"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
